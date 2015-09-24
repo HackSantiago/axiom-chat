@@ -21,6 +21,7 @@
         if (data.text) {
 
           messages.push({text: data.text, user_name: data.user_name});
+          messages = volatileMessages(messages);
 
           $content.html(template({messages: messages}));
 
@@ -46,5 +47,13 @@
     }
 
   });
+
+  function volatileMessages(messages) {
+    if (messages.length > 141) {
+      messages.shift();
+    }
+
+    return messages;
+  }
 
 })($, _);
