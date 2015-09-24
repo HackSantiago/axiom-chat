@@ -15,6 +15,3 @@
 
 //= require lib/jquery-2.1.3.min
 //= require lib/bootstrap.min
-//= require lib/components/socket.io.client/dist/socket.io-1.3.5
-//= require lib/components/lodash/lodash.min
-//= require chat
