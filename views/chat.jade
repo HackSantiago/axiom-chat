@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= "Volatile AxiomChat"
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='csrf-token', content=_csrf)
+    != css('main')
+    != css('chat')
+  body
+    include partials/header
+
+    .container
+      include partials/flash
+
+      #content
+      .controls
+        input.field(autofocus)
+        input.send.btn.btn-success(type='button', value='Send')
+
+    if user
+      input(type="hidden" id="current_user" value="#{JSON.stringify(user)}")
+
+!= js('application')
