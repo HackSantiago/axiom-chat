@@ -10,8 +10,4 @@ Volatile chat for your company.
 
 # Steps
 
-1.- Add `bower` support.
-2.- Add socket.io client side package to `bower.json`.
-3.- Send and receive information from the client side.
-4.- Add `lodash` and use its template engine.
-4.- Show messages in the corresponding section.
+1.- Set messages to a limit of 141 to be client side volatile.
