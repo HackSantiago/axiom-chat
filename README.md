@@ -1,6 +1,6 @@
 # Volatile AxiomChat
 
-Volatile chat for your company.
+Volatile chat for your company powered by [hackathon-starter](https://github.com/sahat/hackathon-starter) and [socket.io](http://socket.io/).
 
 # Instructions
 
