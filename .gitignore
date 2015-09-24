@@ -20,4 +20,5 @@ node_modules
 .DS_Store
 Thumbs.db
 
-public/js/lib/components/**
+public/js/lib/components/*.*
+public/js/lib/components/*/*.*
