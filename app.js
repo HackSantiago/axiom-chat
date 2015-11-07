@@ -2,6 +2,7 @@
  * Module dependencies.
  */
 var express = require('express');
+var socketIO = require('socket.io');
 var cookieParser = require('cookie-parser');
 var compress = require('compression');
 var favicon = require('serve-favicon');
@@ -200,7 +201,10 @@ app.use(errorHandler());
 /**
  * Start Express server.
  */
-app.listen(app.get('port'), function() {
+var io = socketIO.listen(app.listen(app.get('port'), function() {
   console.log('Express server listening on port %d in %s mode', app.get('port'), app.get('env'));
-});
+}));
+
+chatController.handleSocketConnection(io);
+
 module.exports = app;

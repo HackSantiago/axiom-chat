@@ -9,5 +9,5 @@ Volatile chat for your company.
 
 # Steps
 
-1.- Add controller/view/style for the chat page.
-2.- Implement chat controller in app routes.
+1.- Add socket.io support.
+2.- Implement socket controller action into express app.
