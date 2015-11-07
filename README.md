@@ -12,4 +12,4 @@ Follow the branches and its changes to check what was needed for each step.
     bower install
     npm start
 
-# Sildes [here](https://speakerdeck.com/p1nox/un-prototipo-en-menos-de-3-horas).
+_Sildes [here](https://speakerdeck.com/p1nox/un-prototipo-en-menos-de-3-horas)._
